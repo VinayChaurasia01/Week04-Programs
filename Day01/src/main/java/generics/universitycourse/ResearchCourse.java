@@ -1,8 +1,10 @@
 package generics.universitycourse;
 
-public class ResearchCourse extends CourseType{
+// Represents a course focused on research
+public class ResearchCourse extends CourseType {
     private String researchField;
 
+    // Constructor to initialize research course details
     public ResearchCourse(String courseName, String instructor, String researchField) {
         super(courseName, instructor);
         this.researchField = researchField;
@@ -10,6 +12,7 @@ public class ResearchCourse extends CourseType{
 
     @Override
     public <T> T getCourseDetail() {
-        return (T)("Research Field : " + researchField);
+        // Returns research field as a string
+        return (T) ("Research Field: " + researchField);
     }
 }

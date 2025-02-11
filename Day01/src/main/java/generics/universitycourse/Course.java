@@ -1,8 +1,10 @@
 package generics.universitycourse;
 
-public class Course <T extends CourseType>{
+// Generic Course class that holds a specific type of CourseType
+public class Course<T extends CourseType> {
     private T courseType;
 
+    // Constructor to initialize the course
     public Course(T courseType) {
         this.courseType = courseType;
     }
@@ -13,6 +15,6 @@ public class Course <T extends CourseType>{
 
     @Override
     public String toString() {
-        return "CourseType : " + courseType;
+        return "CourseType: " + courseType;
     }
 }

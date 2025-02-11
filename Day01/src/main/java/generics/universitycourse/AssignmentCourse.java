@@ -1,8 +1,10 @@
 package generics.universitycourse;
 
-public class AssignmentCourse extends CourseType{
+// Represents a course type that involves assignments
+public class AssignmentCourse extends CourseType {
     public int totalAssignments;
 
+    // Constructor to initialize assignment course details
     public AssignmentCourse(String courseName, String instructor, int totalAssignments) {
         super(courseName, instructor);
         this.totalAssignments = totalAssignments;
@@ -10,6 +12,7 @@ public class AssignmentCourse extends CourseType{
 
     @Override
     public <T> T getCourseDetail() {
-        return (T)("Total Assignments : " + totalAssignments);
+        // Returns total assignments as a string
+        return (T) ("Total Assignments: " + totalAssignments);
     }
 }
