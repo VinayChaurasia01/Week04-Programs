@@ -1,6 +1,7 @@
 package generics.mealplangenerator;
 
-public class KetoMeal implements MealPlan{
+// Keto Meal Plan
+public class KetoMeal implements MealPlan {
     private int fatPercentage;
 
     public KetoMeal(int fatPercentage) {
@@ -9,6 +10,6 @@ public class KetoMeal implements MealPlan{
 
     @Override
     public String getMealDetails() {
-        return "Keto Meal has Fat percentage : " + fatPercentage;
+        return " Keto Meal - Fat: " + fatPercentage + "%";
     }
 }

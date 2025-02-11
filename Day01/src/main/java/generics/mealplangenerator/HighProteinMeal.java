@@ -1,6 +1,7 @@
 package generics.mealplangenerator;
 
-public class HighProteinMeal implements MealPlan{
+// High Protein Meal Plan
+public class HighProteinMeal implements MealPlan {
     private int proteinGrams;
 
     public HighProteinMeal(int proteinGrams) {
@@ -9,6 +10,6 @@ public class HighProteinMeal implements MealPlan{
 
     @Override
     public String getMealDetails() {
-        return "High-Protein meal with " + proteinGrams + "g of protein";
+        return "🍗 High-Protein Meal - " + proteinGrams + "g protein";
     }
 }

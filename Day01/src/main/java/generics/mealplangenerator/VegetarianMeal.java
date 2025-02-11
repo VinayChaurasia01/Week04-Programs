@@ -1,6 +1,7 @@
 package generics.mealplangenerator;
 
-public class VegetarianMeal implements MealPlan{
+// Vegetarian Meal Plan
+public class VegetarianMeal implements MealPlan {
     private String mainIngredient;
 
     public VegetarianMeal(String mainIngredient) {
@@ -9,7 +10,6 @@ public class VegetarianMeal implements MealPlan{
 
     @Override
     public String getMealDetails() {
-        return "Vegetarian Meal with main ingredient : " + mainIngredient;
+        return "Vegetarian Meal - Main Ingredient: " + mainIngredient;
     }
 }
-

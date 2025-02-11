@@ -1,6 +1,7 @@
 package generics.mealplangenerator;
 
-public class VeganMeal implements MealPlan{
+// Vegan Meal Plan
+public class VeganMeal implements MealPlan {
     private boolean isGlutenFree;
 
     public VeganMeal(boolean isGlutenFree) {
@@ -9,6 +10,6 @@ public class VeganMeal implements MealPlan{
 
     @Override
     public String getMealDetails() {
-        return "Vegan Meal - Gluten Free : " + isGlutenFree;
+        return "Vegan Meal - Gluten-Free: " + (isGlutenFree ? "Yes" : "No");
     }
 }
