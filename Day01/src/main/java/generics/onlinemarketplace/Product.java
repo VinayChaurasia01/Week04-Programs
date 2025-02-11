@@ -1,16 +1,18 @@
 package generics.onlinemarketplace;
 
-public class Product <T> {
+// Generic Product Class
+public class Product<T> {
     private String name;
     private double price;
     private T category;
 
     public Product(String name, double price, T category) {
-        this.price = price;
         this.name = name;
+        this.price = price;
         this.category = category;
     }
 
+    // Getters & Setter for encapsulation
     public String getName() {
         return name;
     }
@@ -29,9 +31,8 @@ public class Product <T> {
 
     @Override
     public String toString() {
-        return  "Name : '" + name +
-                "\nPrice : " + price +
-                "\nCategory : " + category;
+        return "Name: " + name +
+                "\nPrice: $" + price +
+                "\nCategory: " + category;
     }
 }
-

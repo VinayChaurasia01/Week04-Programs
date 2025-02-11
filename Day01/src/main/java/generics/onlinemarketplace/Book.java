@@ -1,5 +1,6 @@
 package generics.onlinemarketplace;
 
+// Book Category Class
 public class Book {
     private String genre;
 
@@ -9,6 +10,6 @@ public class Book {
 
     @Override
     public String toString() {
-        return "Genre : " + genre;
+        return "Genre: " + genre;
     }
 }

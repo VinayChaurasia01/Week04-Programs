@@ -1,5 +1,6 @@
 package generics.onlinemarketplace;
 
+// Clothing Category Class
 public class Clothing {
     private String type;
     private String size;
@@ -11,7 +12,6 @@ public class Clothing {
 
     @Override
     public String toString() {
-        return "Type : " + type + ", size : " + size;
+        return "Type: " + type + ", Size: " + size;
     }
 }
-

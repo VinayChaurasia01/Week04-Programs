@@ -1,6 +1,7 @@
 package generics.onlinemarketplace;
 
-public class Gadgets{
+// Gadgets Category Class
+public class Gadgets {
     private String brand;
     private String type;
 
@@ -11,6 +12,6 @@ public class Gadgets{
 
     @Override
     public String toString() {
-        return "Brand : " + brand + ",\nType : " + type;
+        return "Brand: " + brand + ", Type: " + type;
     }
 }
