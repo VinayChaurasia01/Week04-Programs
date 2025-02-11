@@ -1,4 +1,4 @@
-package generics.smartwarehouse;
+package generics.smartwerehouse;
 
 // Represents a Groceries item in the warehouse
 public class Groceries extends WareHouse {

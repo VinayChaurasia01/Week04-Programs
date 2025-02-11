@@ -1,4 +1,4 @@
-package generics.smartwarehouse;
+package generics.smartwerehouse;
 
 import java.util.ArrayList;
 import java.util.List;

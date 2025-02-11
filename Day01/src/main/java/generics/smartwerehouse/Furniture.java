@@ -1,4 +1,4 @@
-package generics.smartwarehouse;
+package generics.smartwerehouse;
 
 // Represents a Furniture item in the warehouse
 public class Furniture extends WareHouse {
@@ -14,3 +14,4 @@ public class Furniture extends WareHouse {
         return "Furniture: " + getItem();
     }
 }
+
