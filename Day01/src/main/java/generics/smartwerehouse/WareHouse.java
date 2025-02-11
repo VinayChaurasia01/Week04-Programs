@@ -1,19 +1,20 @@
-package generics.smartwerehouse;
+package generics.smartwarehouse;
 
+// Represents a general warehouse item
 public class WareHouse {
-    private  String item;
+    private String item;
 
-    //Constructor
-    public WareHouse(String item){
-        this.item=item;
+    // Constructor to initialize warehouse item
+    public WareHouse(String item) {
+        this.item = item;
     }
 
-    //GetItem function
-    public String getItem(){
+    // Getter method for item name
+    public String getItem() {
         return this.item;
     }
 
-    //toString function
+    // Overriding toString() to display item details
     @Override
     public String toString() {
         return "Item: " + item;

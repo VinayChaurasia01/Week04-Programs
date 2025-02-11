@@ -1,14 +1,16 @@
-package generics.smartwerehouse;
+package generics.smartwarehouse;
 
-public class Furniture extends WareHouse{
+// Represents a Furniture item in the warehouse
+public class Furniture extends WareHouse {
 
-    //Constructor
-    public Furniture(String name){
+    // Constructor to initialize the furniture item
+    public Furniture(String name) {
         super(name);
     }
 
-    //toString function to get name of item
-    public String toString(){
-        return "Furniture :"+getItem();
+    // Overriding toString() to return item details
+    @Override
+    public String toString() {
+        return "Furniture: " + getItem();
     }
 }
