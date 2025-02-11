@@ -9,7 +9,7 @@ public class AIResumeScreening {
         Resume<SoftwareEngineer> seResume = new Resume<>(new SoftwareEngineer("Alice", 5));
         Resume<DataScientist> dsResume = new Resume<>(new DataScientist("Bob", 3));
         Resume<ProductManager> pmResume = new Resume<>(new ProductManager("Charlie", 7));
-        Resume<SoftwareEngineer> fresherResume = new Resume<>(new SoftwareEngineer("David", 0)); // Should not be added
+        Resume<SoftwareEngineer> fresherResume = new Resume<>(new SoftwareEngineer("David", 0)); // Should be rejected
 
         // Adding resumes to the processor
         processor.addResume(seResume);
@@ -17,7 +17,7 @@ public class AIResumeScreening {
         processor.addResume(pmResume);
         processor.addResume(fresherResume);
 
-        // Display resumes
+        // Displaying valid resumes
         processor.displayResumes();
     }
 }
