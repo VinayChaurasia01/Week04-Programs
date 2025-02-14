@@ -90,5 +90,4 @@ public class ObjectSerialization {
         }
         return employees;
     }
-
 }
